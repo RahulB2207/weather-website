@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+  </head>
+<body>
+    {{>navbar}}
+     <main>
+        <section class="weather">
+            <div class="search">
+                <form action=".php" class="search_form">
+                  <input type="text" id="cityname" placeholder="Enter your city name" >
+                <a href="#" class="btn1">Search</a>
+                </form>
+            </div>
+            <div class="second">
+                <div class="info">
+                    <p id="day">Tuesday</p>
+                    <p id="date">20 march 2023</p>
+                </div>
+                <div class="main">
+                 <div>
+                    <p id="city">Get output here</p>
+                 </div>
+                 <div class="main_info">
+                     <div class="one">
+                        <h1 class="temp"></h1>
+                       </div>
+                        <div class="status"></div>
+                     </div>
+                 </div>
+                </div>
+            </div>
+        </section>
+      </main>
+    <script src="../js/main.js"></script> 
+</body>
+</html>

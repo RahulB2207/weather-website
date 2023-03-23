@@ -1,0 +1,254 @@
+:root{
+    --black:#130f40;
+    --light-color:#666;
+    --blue:#1DA1F2;
+}
+html{
+    padding:0;
+    margin:0;
+    font-style: none;
+    text-decoration: none;
+}  
+body{
+    background-color: #eee;
+    text-decoration: none;
+} 
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:5rem;
+    background-color:var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 4rem;
+    z-index:1000;
+}
+header .logo{
+    color:white;
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+header .logo:hover{
+    color:var(--blue);
+}
+header .nav-bar a{
+   text-decoration: none;
+   padding:0 1rem;
+   color:white;
+   font-size: 1rem;
+   margin-left: 5rem;
+}
+header .nav-bar a:hover{
+    color:var(--blue);
+}
+header .icon i{
+    height:1rem;
+    width:2rem;
+    background-color: #dddcdc;
+    text-align: center;
+    padding:0.3rem 0;
+    border-radius:0.3rem;
+}
+header #menu{
+    display: none;
+}
+header .icon i:hover{
+    background-color: var(--blue);
+}
+header .login-form{
+    position: absolute;
+    top:115%;
+    right:-110%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("../images/bg1.png");
+    background-size:cover;
+    background-position: center;
+    height:15rem;
+    width:16rem;
+    background-color: white;
+    border-radius:0.5rem;
+    padding:1rem;
+    box-shadow:2px 2px 1px rgb(181, 179, 179);
+}
+header .active{
+    right:2rem;
+    transition: 0.6s linear;
+}
+header .login-form h3{
+    font-size:1.2rem;
+}
+header .login-form .box{
+    padding:0.3rem;
+    margin:0.6rem 0;
+    background-color: #eee;
+    border:none;
+    text-align: center;
+    border-radius: 0.3rem;
+    width:100%;
+}
+header .login-form p{
+    font-size: 0.9rem;
+    color: var(--light-color);
+}
+header .login-form p a{
+    color:var(--blue);
+}
+header .login-form .btn{
+    padding:0.3rem;
+    border-radius: 0.5rem;
+    margin:0 2.5rem;
+    font-size:0.8rem;
+    font-weight:bolder;
+    background-color: white;
+}
+header .login-form .btn:hover{
+    color:white;
+    background-color: var(--black);
+}
+main .home{
+    height:90vh;
+    position: absolute;
+    left:0;
+    right:0;
+    top:10%;
+   background-image: url("../images/bg3.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .content p{
+    color:var(--black);
+    font-size: 1.1rem;
+}
+main .content h1{
+    color:var(--black);
+    text-transform: capitalize;
+    padding:0rem 1rem;
+    font-size: 2rem;
+}
+main .content h1 span{
+    color:#eee;
+}
+main .content .btn{
+    border:2px solid var(--black);
+    padding:0.5rem 1rem;
+    border-radius:0.5rem;
+   background-color: var(--black);
+   text-decoration: none;
+   font-size: 1rem;
+   font-weight: bolder;
+   color:white;
+   text-transform: capitalize;
+}
+main .content .btn:hover{
+    border-color: var(--black);
+    background-color:#eee;
+    color:black;
+}
+.footer{
+    position: absolute;
+   top:98.8%;
+    left:0;
+    right:0;
+    background-color: var(--black);
+    height:1.7rem;
+    text-align: center;
+    text-transform: capitalize;
+    color:var(--light-color);
+     font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:790px){
+    header .nav-bar{
+        position: absolute;
+        top:-210%;
+        left:0;
+        right:0;
+        background-color: #130f40;
+        height:10rem;
+        text-align: center;
+       display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header .nav-bar a{
+        font-size: 1.1rem;
+    }
+    header #menu{
+        display: inline-block;
+    }
+    header .active1{
+        top:100%;
+        transition: 0.6s linear;
+    }
+}
+@media(max-width:365px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding:0 1.5rem;
+    }
+    header .logo{
+        font-size: 150%;
+    }
+    header .nav-bar{
+        text-align: center;
+    }
+    header .active{
+           right:0.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
