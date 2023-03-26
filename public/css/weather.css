@@ -36,19 +36,19 @@ main .btn1{
     padding:0.4rem 1rem;
     border-radius:2rem;
     background-color: var(--blue);
-  border:2px solid var(--black);
+    border:2px solid var(--black);
     font-weight:600;
     color:white;
     text-decoration: none;
 }
 main .second{
-    height:52vh;
+    height:65vh;
     width:32rem;
     margin:2rem 2rem;
     background-color: white;
     border-radius: 0.6rem;
     box-shadow: 3px 3px 5px rgb(130, 130, 130);
-  background-color: #1e1951;
+     background-color: #1e1951;
     color:white;
 }
 main .info{
@@ -61,6 +61,38 @@ main .info{
     color:white;
     font-weight: 600;
     border-radius: 0.6rem;
+}
+main #more_info{
+    display: visible;
+}
+main .min_max{
+    height:3rem;
+    padding:0.2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top:1rem;
+}
+main .other{
+    padding:0.1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main .min_max h4{
+    font-weight: 100;
+    font-size: 1.2rem;
+    color:rgba(255, 255, 255, 0.714);
+}
+main .other h4{
+    padding:0.1rem 0;
+    margin :0.2rem 0;
+    font-weight: 100;
+    font-size: 1.2rem;
+    color:rgba(255, 255, 255, 0.714);
+
+}
+main .active3 #more_info{
+    display: visible;
 }
 main .main{
     height:32vh;
@@ -84,8 +116,7 @@ main .main .main_info .status{
 }
 main .main .main_info .temp{
     height:1rem;
-    font-size: 3.5rem;
-    
+    font-size: 3.5rem;   
 }
 main #city{
     padding:0 1rem;
@@ -97,8 +128,26 @@ main .btn1:hover{
     background-color: white;
     color:var(--black);
 }
+#status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#button{
+    padding: 0.3rem 1rem;
+    color:white;
+    border-radius:0.5rem;
+    text-decoration: none;
+    border:2px solid white;
+    width:2rem;
+    position: absolute;
+    bottom: 0.5rem;
+    margin:2rem 1rem;
+}
 
-
+#button:hover{
+    border-color: var(--blue);
+}
 @media(max-width:550px){
     main .weather{
         top:20%;
@@ -109,7 +158,7 @@ main .btn1:hover{
        width:90%;
     }
     main .second{
-        height:20rem;
+        height:23rem;
         width:100%;
     }
     main .btn1{
@@ -121,12 +170,37 @@ main .btn1:hover{
     main .second{
         position: relative;
         right:4%;
+      height:80vh;
     }
     main .main .main_info .status{
-        font-size: 3rem;
+        font-size: 4rem;
+       margin-top: 1rem;
     }
     main .main .main_info .temp{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
-    
+    main .main .main_info .temp{
+       padding:1rem 0;
+    }
+    #button{
+        bottom: 0;
+    }
+    main .min_max{
+        flex-direction: column;
+        
+    }
+    main #more_info{
+        margin:2rem 0;
+    }
+    main .min_max h4{
+        margin:0.2rem 0;
+    }
+    main .other{
+        text-align: start;
+    }
+}
+@media(max-width:1500px){
+   main .second{
+    height:80vh;
+   }
 }

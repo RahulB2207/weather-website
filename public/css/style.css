@@ -156,7 +156,8 @@ main .content .btn:hover{
 }
 .footer{
     position: absolute;
-   top:98.8%;
+    bottom:0;
+   /* top:98.8%; */
     left:0;
     right:0;
     background-color: var(--black);
@@ -213,7 +214,7 @@ main .content .btn:hover{
     header{
         display: flex;
         justify-content: space-between;
-        padding:0 1.5rem;
+        padding:0 1rem;
     }
     header .logo{
         font-size: 150%;

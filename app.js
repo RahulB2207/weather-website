@@ -13,7 +13,7 @@ const partial_path = path.join(__dirname,"/templates/partials");
 
 app.set("views",view_path);
 app.use(express.static(staticpath));
-app.set("view-engine",'hbs');
+app.set("view-engine",'hbs');~
 
 hbs.registerPartials(partial_path);
 
