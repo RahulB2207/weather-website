@@ -170,7 +170,7 @@ main .btn1:hover{
     main .second{
         position: relative;
         right:4%;
-      /* height:80vh; */
+      height:80vh;
     }
     main .main .main_info .status{
         font-size: 4rem;
